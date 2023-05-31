@@ -7,7 +7,7 @@ export default function Main() {
 
   return (
     <div>
-      <div className="py-8 bg-slate-50 my-8">
+      <div className="py-8  my-8">
         <div className="text-center">
           <h2 className="font-bold text-3xl pb-4">what this course covers?</h2>
         </div>

@@ -7,6 +7,7 @@ import Main from "./components/main";
 import Outline from "./components/outline";
 import Carousel from "./components/carousel";
 import Curriculum from "./components/curriculum";
+import Price from "./components/price";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -21,6 +22,8 @@ export default function Home() {
         <Main />
         <Outline />
         <Curriculum />
+        <Price />
+
         {/* <Carousel /> */}
         {/* <Middle /> */}
       </main>

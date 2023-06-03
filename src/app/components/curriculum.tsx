@@ -6,7 +6,28 @@ export default function Curriculum() {
         <h2 className="font-bold text-2xl">Curriculum</h2>
         <p>{text}</p>
       </div>
-      <div className="flex justify-evenly gap-4 py-8">
+      <div className="flex flex-col md:flex-row gap-y-4 items-center justify-center md:justify-evenly md:gap-4 py-8">
+        <div className="card w-96 bg-primary text-primary-content">
+          <div className="card-body">
+            <h2 className="card-title">Week 1</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div className="card-actions justify-end"></div>
+          </div>
+        </div>
+        <div className="card w-96 bg-primary text-primary-content">
+          <div className="card-body">
+            <h2 className="card-title">Week 2</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div className="card-actions justify-end"></div>
+          </div>
+        </div>
+        <div className="card w-96 bg-primary text-primary-content">
+          <div className="card-body">
+            <h2 className="card-title">Week3</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div className="card-actions justify-end"></div>
+          </div>
+        </div>
         <div className="card w-96 bg-primary text-primary-content">
           <div className="card-body">
             <h2 className="card-title">Week 1</h2>
@@ -30,7 +51,7 @@ export default function Curriculum() {
         </div>
       </div>
 
-      <div className="flex justify-evenly gap-4 py-8">
+      {/* <div className="flex flex-col md:flex-row gap-y-4 items-center justify-centermd:justify-evenly md:gap-4 py-8">
         <div className="card w-96 bg-primary text-primary-content">
           <div className="card-body">
             <h2 className="card-title">Week 1</h2>
@@ -52,7 +73,7 @@ export default function Curriculum() {
             <div className="card-actions justify-end"></div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

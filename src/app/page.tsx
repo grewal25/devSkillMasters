@@ -19,7 +19,7 @@ export default function Home() {
       <main className="flex flex-col justify-start px-8">
         <Navbar />
         <Hero />
-        <Main />
+        {/* <Main /> */}
         <Outline />
         <Curriculum />
         <Price />

@@ -1,11 +1,11 @@
 export default function Outline() {
   return (
     <div>
-      <div className="text-center pb-6 font-bold text-2xl underline capitalize">
+      <div className="text-center pb-6 font-bold text-2xl underline capitalize pt-6">
         what you will build
       </div>
       <div className="text-center pb-6 font-bold">2 Real World Projects</div>
-      <div className="flex justify-evenly">
+      <div className="flex flex-col items-center justify-center md:flex-row md:justify-evenly md:gap-4">
         <div className="card w-96 bg-base-100 shadow-xl">
           <figure>
             <img src="/car-2.jpeg" alt="Shoes" />

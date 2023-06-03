@@ -7,6 +7,7 @@ import Main from "./components/main";
 import Outline from "./components/outline";
 import Carousel from "./components/carousel";
 import Curriculum from "./components/curriculum";
+import Price from "./components/price";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -18,9 +19,11 @@ export default function Home() {
       <main className="flex flex-col justify-start px-8">
         <Navbar />
         <Hero />
-        <Main />
+        {/* <Main /> */}
         <Outline />
         <Curriculum />
+        <Price />
+
         {/* <Carousel /> */}
         {/* <Middle /> */}
       </main>

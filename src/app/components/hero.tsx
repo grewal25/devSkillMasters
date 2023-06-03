@@ -1,20 +1,21 @@
 export default function Hero() {
   const heading = "Hey future devs...";
-  const text1 = `Unlock your potential and master the art of frontend development.`;
+  const text1 = `Bootcamp to make you job ready`;
 
-  const text2 = `Join our bootcamp to learn HTML, CSS, JavaScript, and React. 
-  Build production like web apps. Get hirable skills.`;
+  const text2 = `In the next 16 weeks, I will work with you to help you acquire the skills necessary to become a hirable frontend developer.`;
   return (
-    <div className="hero bg-base-200 hero min-h-screen">
+    <div className="hero bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
         <img
           src="/thumbnail.png"
-          className="max-w-sm lg:max-w-xl rounded-lg shadow-2xl"
+          className=" max-w-xs lg:max-w-xl md:rounded-lg md:shadow-2xl"
         />
         <div>
           <h1 className="text-5xl font-bold">{heading}</h1>
           <p className="py-6">
-            {text1}
+            <span className="font-bold text-2xl">{text1}</span>
+            <br />
+            <br />
             {text2}
           </p>
           <button className="btn btn-primary">Join the program</button>

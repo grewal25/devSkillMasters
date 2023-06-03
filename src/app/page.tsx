@@ -21,10 +21,10 @@ export default function Home() {
         <Hero />
         {/* <Main /> */}
         <Outline />
-        <Curriculum />
+        <Carousel />
+        {/* <Curriculum /> */}
         <Price />
 
-        {/* <Carousel /> */}
         {/* <Middle /> */}
       </main>
     </div>

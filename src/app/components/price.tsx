@@ -17,7 +17,7 @@ export default function Price() {
           capital can unlock long-term value and drive economic growth.
         </p>
       </div>
-      <div className="flex justify-evenly gap-4">
+      <div className="flex flex-col md:flex-row md:justify-evenly gap-y-8 md:gap-4 items-center justify-center ">
         <div className="card w-96 bg-secondary text-primary-content">
           <div className="card-body">
             <h2 className="card-title">Personal Cohort!</h2>

@@ -16,15 +16,15 @@ const roboto = Roboto({
 export default function Home() {
   return (
     <div>
-      <main className="flex flex-col justify-start px-8">
+      <main className="flex flex-col justify-start px-0">
         <Navbar />
         <Hero />
         {/* <Main /> */}
         <Outline />
-        <Curriculum />
+        <Carousel />
+        {/* <Curriculum /> */}
         <Price />
 
-        {/* <Carousel /> */}
         {/* <Middle /> */}
       </main>
     </div>

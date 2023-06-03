@@ -33,9 +33,12 @@ export default function Outline() {
         </div>
       </div>
 
-      <div className="hero min-h-screen bg-base-200 my-8">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <img src="/car-2.jpeg" className="max-w-sm rounded-lg shadow-2xl" />
+      <div className="md:hero min-h-screen bg-base-200 my-8">
+        <div className="md:hero-content flex-col lg:flex-row-reverse p-4 md:p-0">
+          <img
+            src="/car-2.jpeg"
+            className="w-96 md:max-w-sm rounded-lg shadow-2xl"
+          />
           <div>
             <h1 className="text-5xl font-bold">Capstone Project!</h1>
             <p className="py-6">

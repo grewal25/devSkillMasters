@@ -9,16 +9,14 @@ export default function Price() {
   return (
     <div>
       <div className="text-center py-8">
-        <h2 className="font-bold text-2xl">
-          Designed for business teams like yours
-        </h2>
+        <h2 className="font-bold text-2xl">Choose the plan suits your needs</h2>
         <p>
-          Here at Flowbite we focus on markets where technology, innovation, and
-          capital can unlock long-term value and drive economic growth.
+          Here at Dev Skill Masters, we focus on making students ready for job
+          when they complete the program.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row md:justify-evenly gap-y-8 md:gap-4 items-center justify-center ">
-        <div className="card w-96 bg-secondary text-primary-content">
+      <div className="flex flex-col md:items-stretch md:flex-row md:justify-evenly gap-y-8 md:gap-4 items-center justify-center ">
+        <div className="card  w-96 bg-secondary text-primary-content">
           <div className="card-body">
             <h2 className="card-title">Personal Cohort!</h2>
 
@@ -75,8 +73,8 @@ export default function Price() {
                 </div>
               </div>
             </div>
-            <div className="card-actions justify-end">
-              <button className="btn">Buy Now</button>
+            <div className="justify-end text-center">
+              <button className="btn btn-wide">Buy Now</button>
             </div>
           </div>
         </div>
@@ -130,8 +128,8 @@ export default function Price() {
                 </div>
               </div>
             </div>
-            <div className="card-actions justify-end">
-              <button className="btn">Buy Now</button>
+            <div className="justify-end text-center py-20">
+              <button className="btn btn-wide">Buy Now</button>
             </div>
           </div>
         </div>

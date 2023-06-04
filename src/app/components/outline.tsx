@@ -33,7 +33,7 @@ export default function Outline() {
         </div>
       </div>
 
-      <div className="md:hero min-h-screen bg-base-200 my-8">
+      <div className="md:hero md:min-h-screen bg-base-200 my-8">
         <div className="md:hero-content flex-col lg:flex-row-reverse p-4 md:p-0">
           <img
             src="/car-2.jpeg"

@@ -44,7 +44,7 @@ export default function Curriculum() {
             <div className="card-actions justify-end"></div>
           </div>
         </div>
-        <div className="card min-w-full md:min-w-[50%] w-96 bg-primary text-primary-content min-h-min">
+        <div className="card min-w-full md:min-w-[50%] lg:w-96 bg-primary text-primary-content min-h-min">
           <div className="card-body text-center lg:text-start">
             <h2 className="font-bold text-2xl text-center underline lg:card-title">
               Month 4

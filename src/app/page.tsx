@@ -10,6 +10,7 @@ import Curriculum from "./components/curriculum";
 import Price from "./components/price";
 import CarouselDefault from "./components/carousel-default";
 import FandQ from "./components/fandq";
+import Footer from "./components/footer";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function Home() {
         <Curriculum />
         <Price />
         <FandQ />
+        <Footer />
         {/* <Middle /> */}
       </main>
     </div>

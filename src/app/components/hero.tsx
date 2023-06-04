@@ -4,13 +4,13 @@ export default function Hero() {
 
   const text2 = `In the next 16 weeks, I will work with you to help you acquire the skills necessary to become a hirable frontend developer.`;
   return (
-    <div className="hero bg-base-200">
-      <div className="hero-content flex-col lg:flex-row">
+    <div className="md:hero bg-base-200">
+      <div className="md:hero-content flex-col lg:flex-row">
         <img
           src="/thumbnail.png"
-          className=" max-w-xs lg:max-w-xl md:rounded-lg md:shadow-2xl"
+          className="md:max-w-xs lg:max-w-xl md:rounded-lg md:shadow-2xl"
         />
-        <div>
+        <div className="m-4 lg:m-0">
           <h1 className="text-5xl font-bold">{heading}</h1>
           <p className="py-6">
             <span className="font-bold text-2xl">{text1}</span>

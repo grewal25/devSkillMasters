@@ -128,7 +128,7 @@ export default function Price() {
                 </div>
               </div>
             </div>
-            <div className="justify-end text-center py-20">
+            <div className="justify-end text-center md:py-20">
               <button className="btn btn-wide">Buy Now</button>
             </div>
           </div>

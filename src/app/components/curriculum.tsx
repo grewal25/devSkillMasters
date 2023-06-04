@@ -1,7 +1,7 @@
 export default function Curriculum() {
   const text = `This curriculum teaches everything you need to know to build modern, polished web experiences. It's a no-fluff distillation of the skills I've learned over 4+ years.;`;
   return (
-    <div>
+    <div className="lg:px-20">
       <div className="text-center max-w-lg m-auto">
         <h2 className="font-bold text-2xl">Curriculum</h2>
         <p>{text}</p>

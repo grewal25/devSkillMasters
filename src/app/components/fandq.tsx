@@ -37,7 +37,7 @@ export default function FandQ() {
   ];
 
   return (
-    <div className="p-20">
+    <div className="pt-4 lg:p-20">
       <h2 className="text-center font-bold text-xl">
         Frequently Asked Questions
       </h2>

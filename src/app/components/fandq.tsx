@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 
 export default function FandQ() {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(-1);
 
-  const handleAccordionToggle = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
+  const handleAccordionToggle = (index: number) => {
+    setActiveIndex(index === activeIndex ? -1 : index);
   };
 
   const accordionItems = [

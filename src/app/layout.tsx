@@ -20,9 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={mukta.className} data-theme="">
+    <html lang="en" className={mukta.className} data-theme="light">
       <body>
-        <button>change theme</button>
         <div>{children}</div>
       </body>
     </html>

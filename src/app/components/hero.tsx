@@ -18,7 +18,7 @@ export default function Hero() {
             <br />
             {text2}
           </p>
-          <button className="btn btn-primary">Join the program</button>
+          <button className="btn btn-primary">Enroll Now</button>
         </div>
       </div>
     </div>

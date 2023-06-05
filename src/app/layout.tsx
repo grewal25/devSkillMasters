@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 
 import { Nunito } from "next/font/google";
+import { useState } from "react";
 
 const mukta = Nunito({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={mukta.className} data-theme="">
       <body>
+        <button>change theme</button>
         <div>{children}</div>
       </body>
     </html>

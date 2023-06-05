@@ -11,10 +11,10 @@ export default function Outline() {
             <img src="/car-2.jpeg" alt="Shoes" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
+            <h2 className="card-title">Ecommerce Platform</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
+              <button className="btn btn-primary">Enrol Now</button>
             </div>
           </div>
         </div>
@@ -24,10 +24,10 @@ export default function Outline() {
             <img src="/car-2.jpeg" alt="Shoes" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
+            <h2 className="card-title">Portfolio Website</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
+              <button className="btn btn-primary">Enrol Now</button>
             </div>
           </div>
         </div>
@@ -45,7 +45,15 @@ export default function Outline() {
               You will be put in a group of other students and at the end of the
               project you will complete a capstone project.
             </p>
-            <button className="btn btn-primary">Join the program</button>
+            <p className="py-6">Fitness Tracker</p>
+            <p className="py-6">
+              You with your team will create an open source fitness tracker
+              where users can log their workouts, set fitness goals, track
+              progress, and view statistics. Include features like exercise
+              tracking, goal setting, and data visualization.
+            </p>
+
+            <button className="btn btn-primary">Enrol Now</button>
           </div>
         </div>
       </div>

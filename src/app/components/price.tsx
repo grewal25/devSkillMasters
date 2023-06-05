@@ -74,7 +74,7 @@ export default function Price() {
               </div>
             </div>
             <div className="justify-end text-center">
-              <button className="btn btn-wide">Buy Now</button>
+              <button className="btn btn-wide">Enrol Now</button>
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default function Price() {
               </div>
             </div>
             <div className="justify-end text-center md:py-20">
-              <button className="btn btn-wide">Buy Now</button>
+              <button className="btn btn-wide">Enrol Now</button>
             </div>
           </div>
         </div>

@@ -11,28 +11,30 @@ export default function FandQ() {
   const accordionItems = [
     {
       title: "when does the bootcamp starts and timings?",
-      content:
-        "Content for Accordion Item 1 Content for Accordion Item 1 Content for Accordion Item 1",
+      content: "The start date is July 8th, 9am Eastern Standard Time.",
     },
     {
       title: "Is it live bootcamp?",
-      content: "Content for Accordion Item 2",
+      content: "Yes, all classes will be on Zoom.",
     },
     {
       title: "Will I get the recording?",
-      content: "Content for Accordion Item 3",
+      content:
+        "Yes, at the end of the class, you will be provided with class notes and recording.",
     },
     {
       title: "Will notes be provided?",
-      content: "Content for Accordion Item 3",
+      content:
+        "Yes, I will email you the notes before the class so you can review it.",
     },
     {
       title: "What are the prerequisites of the course?",
-      content: "Content for Accordion Item 3",
+      content: "I will start with the basics, so there are no prerequisite.",
     },
     {
       title: "Do you offer refund if I am not satisfied?",
-      content: "Content for Accordion Item 3",
+      content:
+        "Yes, you can get your full refund within 2 weeks of starting. So, you can apply carefree and for any reason you cannot continue, we will offer full refund",
     },
   ];
 

@@ -7,6 +7,7 @@ import Price from "./components/price";
 import FandQ from "./components/fandq";
 import Footer from "./components/footer";
 import CollapseCurriculum from "./components/collapse-curriculum";
+import Calendar from "./calender";
 
 const roboto = Roboto({
   subsets: ["latin"],

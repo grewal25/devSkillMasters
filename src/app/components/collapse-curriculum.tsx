@@ -10,7 +10,7 @@ export default function CollapseCurriculum() {
           Show full Curriculum
         </button> */}
         {true && (
-          <div className="mx-20">
+          <div className="lg:mx-20">
             <div
               tabIndex={0}
               className="collapse collapse-arrow  border-base-300 bg-slate-50"

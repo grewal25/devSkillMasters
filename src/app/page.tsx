@@ -25,7 +25,6 @@ export default function Home() {
         <CollapseCurriculum />
         <Price />
         <FandQ />
-        <PayPalButton />
         <Footer />
       </main>
     </div>

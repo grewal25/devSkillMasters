@@ -81,7 +81,7 @@ export default function Price() {
 
         <div className="card w-96 bg-primary text-primary-content">
           <div className="card-body">
-            <h2 className="card-title">Best for Buck!</h2>
+            <h2 className="card-title">Best for Buck!(Recommended)</h2>
 
             <span className="font-black text-3xl">$350</span>
             <div>

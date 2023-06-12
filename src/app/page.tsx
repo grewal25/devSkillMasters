@@ -8,6 +8,7 @@ import FandQ from "./components/fandq";
 import Footer from "./components/footer";
 import CollapseCurriculum from "./components/collapse-curriculum";
 import Calendar from "./calender";
+import PayPalButton from "./components/paypalButton";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function Home() {
         <CollapseCurriculum />
         <Price />
         <FandQ />
+        <PayPalButton />
         <Footer />
       </main>
     </div>

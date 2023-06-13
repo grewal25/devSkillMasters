@@ -32,6 +32,7 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
         currency: currency,
       },
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currency, showSpinner]);
 
   return (
@@ -59,9 +60,13 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
             });
         }}
         onApprove={function (data, actions) {
-          return actions.order.capture().then(function () {
-            // Your code here after capture the order
-          });
+          if (actions.order) {
+            // Check if actions.order is defined
+            return actions.order.capture().then(function () {
+              // Your code here after capture the order
+            });
+          }
+          return Promise.resolve();
         }}
       />
     </>

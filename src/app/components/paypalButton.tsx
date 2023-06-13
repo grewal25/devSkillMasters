@@ -38,7 +38,6 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
     <>
       {showSpinner && isPending && <div className="spinner" />}
       <PayPalButtons
-        style={style}
         disabled={false}
         forceReRender={[amount, currency, style]}
         fundingSource={undefined}

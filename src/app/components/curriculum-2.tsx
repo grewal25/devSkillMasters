@@ -3,13 +3,15 @@ import { FaBeer } from "react-icons/fa";
 export default function Curriculum2() {
   return (
     <div className="mb-6">
-      <div className="text-center pb-4">The Bootcamp includes:</div>
+      <div className="text-center pb-4 font-extrabold text-2xl">
+        The Bootcamp includes:
+      </div>
       <div className="">
         <div className="grid grid-rows-1 md:grid-cols-2 bg-base-700 shadow-xl md:gap-4">
           <figure className="flex justify-center md:justify-end">
             <img src="/rocket.png" alt="Movie" className="pb-2 w-1/2" />
           </figure>
-          <div className="flex flex-col justify-center p-4 md:p-0">
+          <div className="flex flex-col justify-center p-4 md:p-0 text-center">
             <div className="max-w-screen-lg">
               <h2 className="font-extrabold text-xl ">
                 Basics of HTML, CSS and JavaScript
@@ -33,7 +35,7 @@ export default function Curriculum2() {
           <figure className="flex justify-center md:justify-end">
             <img src="/design.png" alt="Movie" className="pb-2 w-1/2" />
           </figure>
-          <div className="flex flex-col justify-center p-4 md:p-0">
+          <div className="flex flex-col justify-center p-4 md:p-0 text-center">
             <div className="max-w-screen-lg">
               <h2 className="font-extrabold text-xl ">Responsive Design</h2>
               <p>
@@ -58,7 +60,7 @@ export default function Curriculum2() {
           <figure className="flex justify-center md:justify-end">
             <img src="/react.png" alt="Movie" className="pb-2 w-1/2" />
           </figure>
-          <div className="flex flex-col justify-center p-4 md:p-0">
+          <div className="flex flex-col justify-center p-4 md:p-0 text-center">
             <div className="max-w-screen-lg">
               <h2 className="font-extrabold text-xl ">
                 Fundamentals of ReactJS
@@ -82,7 +84,7 @@ export default function Curriculum2() {
           <figure className="flex justify-center md:justify-end">
             <img src="/hooks.png" alt="Movie" className="pb-2 w-1/2" />
           </figure>
-          <div className="flex flex-col justify-center p-4 md:p-0">
+          <div className="flex flex-col justify-center p-4 md:p-0 text-center">
             <div className="max-w-screen-lg">
               <h2 className="font-extrabold text-xl ">Advance ReactJS</h2>
               <p>Hooks will come in help understanding complex logic.</p>
@@ -103,7 +105,7 @@ export default function Curriculum2() {
           <figure className="flex justify-center md:justify-end">
             <img src="/real.png" alt="Movie" className="pb-2 w-1/2" />
           </figure>
-          <div className="flex flex-col justify-center p-4 md:p-0">
+          <div className="flex flex-col justify-center p-4 md:p-0 text-center">
             <div className="max-w-screen-lg">
               <h2 className="font-extrabold text-xl ">Team Project</h2>
               <p>

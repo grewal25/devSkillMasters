@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Outline() {
   return (
     <div>
@@ -14,7 +16,10 @@ export default function Outline() {
             <h2 className="card-title">Ecommerce Platform</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Enrol Now</button>
+              <button className="btn btn-primary">
+                {" "}
+                <Link href="/checkout">Enrol now</Link>
+              </button>
             </div>
           </div>
         </div>
@@ -27,7 +32,10 @@ export default function Outline() {
             <h2 className="card-title">Portfolio Website</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Enrol Now</button>
+              <button className="btn btn-primary">
+                {" "}
+                <Link href="/checkout">Enrol now</Link>
+              </button>
             </div>
           </div>
         </div>
@@ -53,7 +61,10 @@ export default function Outline() {
               tracking, goal setting, and data visualization.
             </p>
 
-            <button className="btn btn-primary">Enrol Now</button>
+            <button className="btn btn-primary">
+              {" "}
+              <Link href="/checkout">Enrol now</Link>
+            </button>
           </div>
         </div>
       </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   const heading = "Hey future devs...";
   const text1 = `Bootcamp to make you job ready`;
@@ -18,7 +20,9 @@ export default function Hero() {
             <br />
             {text2}
           </p>
-          <button className="btn btn-primary">Enroll Now</button>
+          <button className="btn btn-primary">
+            <Link href="/checkout">Enrol now</Link>
+          </button>
         </div>
       </div>
     </div>

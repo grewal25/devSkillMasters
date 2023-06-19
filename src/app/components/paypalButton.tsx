@@ -1,5 +1,4 @@
 "use client";
-import { useEffect } from "react";
 import {
   PayPalScriptProvider,
   PayPalButtons,
@@ -7,83 +6,48 @@ import {
 } from "@paypal/react-paypal-js";
 
 // This values are the props in the UI
-const amount = "2";
-const currency = "USD";
-const style = { layout: "vertical" };
 
-interface ButtonWrapperProps {
-  currency: string;
-  showSpinner: boolean;
-}
-// Custom component to wrap the PayPalButtons and handle currency changes
-const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
-  currency,
-  showSpinner,
-}) => {
-  // usePayPalScriptReducer can be use only inside children of PayPalScriptProviders
-  // This is the main reason to wrap the PayPalButtons in a new component
-  const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
-
-  useEffect(() => {
-    dispatch({
-      type: "resetOptions",
-      value: {
-        ...options,
-        currency: currency,
-      },
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currency, showSpinner]);
-
-  return (
-    <>
-      {showSpinner && isPending && <div className="spinner" />}
-      <PayPalButtons
-        disabled={false}
-        forceReRender={[amount, currency, style]}
-        fundingSource={undefined}
-        createOrder={(data, actions) => {
-          return actions.order
-            .create({
-              purchase_units: [
-                {
-                  amount: {
-                    currency_code: currency,
-                    value: amount,
-                  },
-                },
-              ],
-            })
-            .then((orderId) => {
-              // Your code here after create the order
-              return orderId;
-            });
-        }}
-        onApprove={function (data, actions) {
-          if (actions.order) {
-            // Check if actions.order is defined
-            return actions.order.capture().then(function () {
-              // Your code here after capture the order
-            });
-          }
-          return Promise.resolve();
-        }}
-      />
-    </>
-  );
-};
+const SECRET_KEY = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
 
 export default function PayPalButton() {
+  // const onError = (err) => {
+  //   console.error("PayPal Error:", err);
+  //   // Handle the error as needed
+  // };
   return (
     <div>
       <PayPalScriptProvider
         options={{
-          "client-id": "test",
+          "client-id": SECRET_KEY || "",
           components: "buttons",
           currency: "USD",
         }}
       >
-        <ButtonWrapper currency={currency} showSpinner={false} />
+        <PayPalButtons
+          createOrder={(data, actions) => {
+            return actions.order.create({
+              purchase_units: [
+                {
+                  amount: {
+                    value: "13.99",
+                  },
+                },
+              ],
+            });
+          }}
+          onApprove={(data, actions) => {
+            if (actions.order) {
+              return actions.order.capture().then(function (details) {
+                alert(
+                  "Transaction completed by " + details.payer.name?.given_name
+                );
+              });
+            }
+            return Promise.resolve();
+          }}
+          //TODO: onDecline
+          //TODO: onError
+        />
       </PayPalScriptProvider>
     </div>
   );

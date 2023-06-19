@@ -9,6 +9,7 @@ import Footer from "./components/footer";
 import CollapseCurriculum from "./components/collapse-curriculum";
 import Calendar from "./calender";
 import PayPalButton from "./components/paypalButton";
+import Curriculum2 from "./components/curriculum-2";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -21,7 +22,8 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Outline />
-        <Curriculum />
+        <Curriculum2 />
+        {/* <Curriculum /> */}
         <CollapseCurriculum />
         <Price />
         <FandQ />

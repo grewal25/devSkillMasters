@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 
 import { BsCheckSquareFill } from "react-icons/bs";
@@ -16,7 +17,7 @@ export default function Price() {
         </p>
       </div>
       <div className="flex flex-col md:items-stretch md:flex-row md:justify-evenly gap-y-8 md:gap-4 items-center justify-center ">
-        <div className="card  w-96 bg-secondary text-primary-content">
+        <div className="card  w-96 bg-neutral-focus text-primary-content">
           <div className="card-body">
             <h2 className="card-title">Personal Cohort!</h2>
 
@@ -74,12 +75,15 @@ export default function Price() {
               </div>
             </div>
             <div className="justify-end text-center">
-              <button className="btn btn-wide">Enrol Now</button>
+              <button className="btn btn-wide">
+                {" "}
+                <Link href="/checkout2">Enrol now</Link>
+              </button>
             </div>
           </div>
         </div>
 
-        <div className="card w-96 bg-primary text-primary-content">
+        <div className="card w-96 bg-success">
           <div className="card-body">
             <h2 className="card-title">Best for Buck!(Recommended)</h2>
 
@@ -129,7 +133,10 @@ export default function Price() {
               </div>
             </div>
             <div className="justify-end text-center md:py-20">
-              <button className="btn btn-wide">Enrol Now</button>
+              <button className="btn btn-wide">
+                {" "}
+                <Link href="/checkout">Enrol now</Link>
+              </button>
             </div>
           </div>
         </div>

@@ -1,19 +1,11 @@
 "use client";
-import {
-  PayPalScriptProvider,
-  PayPalButtons,
-  usePayPalScriptReducer,
-} from "@paypal/react-paypal-js";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 // This values are the props in the UI
 
 const SECRET_KEY = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
 
 export default function PayPalButton() {
-  // const onError = (err) => {
-  //   console.error("PayPal Error:", err);
-  //   // Handle the error as needed
-  // };
   return (
     <div>
       <PayPalScriptProvider
@@ -45,8 +37,11 @@ export default function PayPalButton() {
             }
             return Promise.resolve();
           }}
-          //TODO: onDecline
-          //TODO: onError
+          onError={(err) => {
+            // Handle error scenario here
+            console.error("PayPal Error:", err);
+            alert("An error occurred during the PayPal transaction.");
+          }}
         />
       </PayPalScriptProvider>
     </div>

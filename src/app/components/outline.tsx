@@ -10,7 +10,7 @@ export default function Outline() {
       <div className="flex flex-col items-center justify-center md:flex-row md:justify-evenly md:gap-4">
         <div className="card w-96 bg-base-100 shadow-xl">
           <figure>
-            <img src="/shoes.png" alt="Shoes" />
+            <img src="/store.png" alt="Shoes" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">Ecommerce Platform</h2>
@@ -26,7 +26,7 @@ export default function Outline() {
 
         <div className="card w-96 bg-base-100 shadow-xl">
           <figure>
-            <img src="/expense.png" alt="Shoes" />
+            <img src="/port.png" alt="Shoes" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">Portfolio Website</h2>
@@ -44,8 +44,8 @@ export default function Outline() {
       <div className="md:hero md:min-h-screen bg-base-200 my-8">
         <div className="md:hero-content flex-col lg:flex-row-reverse p-4 md:p-0">
           <img
-            src="/fitness.png"
-            className="w-96 md:max-w-sm rounded-lg shadow-2xl"
+            src="/tracker.png"
+            className="w-96 md:max-w-xl rounded-lg shadow-2xl"
           />
           <div>
             <h1 className="text-5xl font-bold">Capstone Project!</h1>

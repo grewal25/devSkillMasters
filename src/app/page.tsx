@@ -7,7 +7,6 @@ import Price from "./components/price";
 import FandQ from "./components/fandq";
 import Footer from "./components/footer";
 import CollapseCurriculum from "./components/collapse-curriculum";
-import Calendar from "./calender";
 import PayPalButton from "./components/paypalButton";
 import Curriculum2 from "./components/curriculum-2";
 
@@ -18,16 +17,17 @@ const roboto = Roboto({
 export default function Home() {
   return (
     <div>
-      <main className="flex flex-col justify-start px-8">
+      <main className="flex flex-col justify-start">
         <Navbar />
         <Hero />
-        <Outline />
-        <Curriculum2 />
-        {/* <Curriculum /> */}
-        <CollapseCurriculum />
-        <Price />
-        <FandQ />
-        <Footer />
+        <div className="px-8">
+          <Outline />
+          <Curriculum2 />
+          <CollapseCurriculum />
+          <Price />
+          <FandQ />
+          <Footer />
+        </div>
       </main>
     </div>
   );

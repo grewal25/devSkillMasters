@@ -15,6 +15,10 @@ module.exports = {
       minWidth: {
         "1/2": "50%",
       },
+      colors: {
+        btnColor: "#5271FF",
+        btnColorSecondary: "#ffbe0b",
+      },
     },
   },
   plugins: [require("daisyui")],

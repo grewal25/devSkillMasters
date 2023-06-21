@@ -10,13 +10,13 @@ export default function Outline() {
       <div className="flex flex-col items-center justify-center md:flex-row md:justify-evenly md:gap-4">
         <div className="card w-96 bg-base-100 shadow-xl">
           <figure>
-            <img src="/store.png" alt="Shoes" />
+            <img src="/ecom.png" alt="Shoes" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">Ecommerce Platform</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">
+              <button className="btn bg-btnColor text-secondary-content">
                 {" "}
                 <Link href="/checkout">Enrol now</Link>
               </button>
@@ -32,7 +32,7 @@ export default function Outline() {
             <h2 className="card-title">Portfolio Website</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">
+              <button className="btn bg-btnColor text-secondary-content">
                 {" "}
                 <Link href="/checkout">Enrol now</Link>
               </button>
@@ -61,7 +61,7 @@ export default function Outline() {
               tracking, goal setting, and data visualization.
             </p>
 
-            <button className="btn btn-primary">
+            <button className="btn bg-btnColor text-secondary-content">
               {" "}
               <Link href="/checkout">Enrol now</Link>
             </button>
